@@ -26,13 +26,7 @@
 
 ## LEARNING
 
-### CREATE GITHUB SAMPLES
-
-```shell
-curl -fsSL https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/create_github_samples.sh | bash
-```
-
-### MAKE GITHUB REPOS PRIVATE
+### MAKE ALL REPOS PRIVATE
 
 ```shell
 curl -fsSL https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/ensure_repos_private.sh | bash
