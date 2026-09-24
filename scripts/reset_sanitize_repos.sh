@@ -20,10 +20,10 @@ main() {
 		(
 			cd "$clone_dir"
 			curl -fsSL https://raw.githubusercontent.com/olankens/repowipe/HEAD/scripts/repowipe.sh | bash
-			git push -u origin main
+			git push -u origin HEAD:main
 			curl -fsSL https://raw.githubusercontent.com/olankens/sanityme/HEAD/scripts/sanityme.sh | bash
 			curl -fsSL https://raw.githubusercontent.com/olankens/repowipe/HEAD/scripts/repowipe.sh | bash
-			git push -u origin main
+			git push -u origin HEAD:main
 			curl -fsSL https://raw.githubusercontent.com/olankens/sanityme/HEAD/scripts/sanityme.sh | bash
 		)
 	done
