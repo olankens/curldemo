@@ -26,7 +26,7 @@
 
 ## LEARNING
 
-### MAKE ALL REPOS PRIVATE
+### ENSURE ALL REPOS PRIVATE
 
 ```shell
 curl -fsSL https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/ensure_repos_private.sh | bash
@@ -36,4 +36,12 @@ curl -fsSL https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/ensu
 
 ```shell
 curl -fsSL https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/update_macos_staruml.sh | bash
+```
+
+### RESET AND SANITIZE REPOS
+
+```shell
+address="https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/reset_sanitize_repos.sh"
+targets=("repo1" "repo2", "repo3")
+curl -fsSL "$address" | bash -s -- "${targets[@]}"
 ```
