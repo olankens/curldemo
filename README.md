@@ -42,6 +42,6 @@ curl -fsSL https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/upda
 
 ```shell
 address="https://raw.githubusercontent.com/olankens/curldemo/HEAD/scripts/reset_sanitize_repos.sh"
-targets=("repo1" "repo2", "repo3")
+targets=("repo1" "repo2" "repo3")
 curl -fsSL "$address" | bash -s -- "${targets[@]}"
 ```
